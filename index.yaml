@@ -4563,6 +4563,22 @@ entries:
     - https://github.com/iits-consulting/charts/releases/download/kafka-22.2.0-bitnamilegacy/kafka-22.2.0-bitnamilegacy.tgz
     version: 22.2.0-bitnamilegacy
   - apiVersion: v2
+    appVersion: 22.1.5
+    created: "2026-07-31T08:39:16.771440279Z"
+    dependencies:
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 22.1.5
+    description: 'Apache Kafka is an open-source distributed event streaming platform
+      used by thousands of companies for high-performance data pipelines, streaming
+      analytics, data integration, and mission-critical applications. This chart wraps
+      the `kafka` chart from bitnami and defines a few sensible defaults. '
+    digest: 1870f3d7934d5591361c5ef47694aace0e18a58ace626215e906beffd58e35c6
+    name: kafka
+    urls:
+    - https://github.com/nimeji/iits-helm-charts/releases/download/kafka-22.2.0-bitnamilegacy/kafka-22.2.0-bitnamilegacy.tgz
+    version: 22.2.0-bitnamilegacy
+  - apiVersion: v2
     created: "2024-02-06T13:33:07.265758992Z"
     dependencies:
     - name: kafka
@@ -4947,6 +4963,34 @@ entries:
     - https://github.com/iits-consulting/charts/releases/download/keycloakx-7.1.8/keycloakx-7.1.8.tgz
     version: 7.1.8
   kyverno:
+  - apiVersion: v2
+    appVersion: 1.18.2
+    created: "2026-07-31T08:39:17.35975244Z"
+    dependencies:
+    - name: kyverno
+      repository: https://kyverno.github.io/kyverno/
+      version: 3.8.1
+    - name: kyverno-policies
+      repository: https://kyverno.github.io/kyverno/
+      version: 3.8.1
+    - condition: policy-reporter.install
+      name: policy-reporter
+      repository: https://kyverno.github.io/policy-reporter
+      version: 3.8.1
+    - name: common
+      repository: https://charts.iits.tech
+      version: 0.4.0
+    description: 'This chart wraps the upstream `kyverno` and `kyverno-policies` chart
+      and adds a few useful policies:   - Verify all images are signed with cosign   -
+      Verify all images come from allowed image repositories   - Replace the complete
+      registry reference with a custom one   - Prepend the image reference with a
+      custom prefix, useful for e.g. pull-through caches '
+    digest: c567900d709d92bb8265e4f0db49b920a23a66a15ce982d613141cf4a56afc1e
+    name: kyverno
+    type: application
+    urls:
+    - https://github.com/nimeji/iits-helm-charts/releases/download/kyverno-3.4.0/kyverno-3.4.0.tgz
+    version: 3.4.0
   - apiVersion: v2
     appVersion: 1.15.3
     created: "2026-06-26T14:14:07.682020822Z"
@@ -8206,4 +8250,4 @@ entries:
     urls:
     - https://github.com/iits-consulting/charts/releases/download/waf-cert-uploader-0.1.1/waf-cert-uploader-0.1.1.tgz
     version: 0.1.1
-generated: "2026-07-17T12:02:57.425700311Z"
+generated: "2026-07-31T08:39:18.276314956Z"
